@@ -20,6 +20,7 @@
   - Mac easy mode with [homebrew](https://brew.sh/):<a name="homebrew" id="homebrew" />
   ```bash
   $ brew tap mongodb/brew
+  $ brew install mongodb-community
   ```
   - Otherwise checkout instructions [here.](https://docs.mongodb.com/manual/administration/install-community/)
 
@@ -44,7 +45,6 @@
    - If on mac with [homebrew](#homebrew)
    ```bash
    $ brew services start mongodb-community
-   $ brew install mongodb-community
    ```
    - Otherwise (Windows installations may already be running a mongo db service [read more here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#if-you-installed-mongodb-as-a-windows-service).)
    ```bash
