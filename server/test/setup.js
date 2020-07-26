@@ -14,7 +14,7 @@ beforeEach(done => {
   return clearDb(done);
 });
 
-afterEach(done => {
+afterAll(done => {
   mongoose.disconnect();
   return done();
 });
