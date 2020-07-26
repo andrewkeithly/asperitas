@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "asperitas",
+  "name": "postr",
   "env": {
     "DATABASE_URL": "@database-url"
   },
@@ -9,7 +9,7 @@
     { "src": "server/index.js", "use": "@now/node-server@0.4.24" }
   ],
   "routes": [
-    { "src": "/api/?(.*)", "dest": "/server"},
+    { "src": "/api/?(.*)", "dest": "/server" },
     { "src": "/static/(.*)", "dest": "/client/static/$1" },
     { "src": "/.*", "dest": "/client" }
   ]
