@@ -20,14 +20,13 @@ before_install: cd $PACKAGE_LOCATION
 install: yarn install
 
 script: yarn test
-
-jobs:
-  include:
-    - stage: deploy
-      env: PACKAGE_LOCATION=
-      cache: false
-      before_install: skip
-      install: skip
-      script:
-        - yarn add now --no-save
-        - now --token $NOW_TOKEN
+# jobs:
+#   include:
+#     - stage: deploy
+#       env: PACKAGE_LOCATION=
+#       cache: false
+#       before_install: skip
+#       install: skip
+#       script:
+#         - yarn add now --no-save
+#         - now --token $NOW_TOKEN

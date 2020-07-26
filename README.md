@@ -1,5 +1,6 @@
 # Postr
 
+![travis](https://travis-ci.com/andrewkeithly/postr.svg?branch=master)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 > Postr is a full stack reddit-style site that uses Node.js, React, and NoSQL databases originally forked from [Deniz Basegmez's Asperitas](https://github.com/d11z/asperitas).
