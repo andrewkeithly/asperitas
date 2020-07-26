@@ -25,7 +25,7 @@ class SignupForm extends React.Component {
   render() {
     return (
       <Form
-        loading={this.props.loading}
+        loading={this.props.loading ? 1 : undefined}
         onSubmit={this.props.handleSubmit(this.onSubmit)}
       >
         <Field

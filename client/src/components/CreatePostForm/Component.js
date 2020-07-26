@@ -8,12 +8,12 @@ import SubmitButton from '../shared/form/SubmitButton';
 const postTypes = [
   {
     label: 'link',
-    value: 'link'
+    value: 'link',
   },
   {
     label: 'text',
-    value: 'text'
-  }
+    value: 'text',
+  },
 ];
 
 class CreatePostForm extends React.Component {
@@ -23,7 +23,7 @@ class CreatePostForm extends React.Component {
     if (post) history.push(`/a/${post.category}/${post.id}`);
   }
 
-  onSubmit = post => this.props.attemptCreatePost(post);
+  onSubmit = (post) => this.props.attemptCreatePost(post);
 
   mapCategories = () =>
     categories.map((category, index) => (
@@ -35,7 +35,7 @@ class CreatePostForm extends React.Component {
   render() {
     return (
       <Form
-        loading={this.props.isFetching}
+        loading={this.props.isFetching ? 1 : undefined}
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         wide
       >

@@ -6,7 +6,7 @@ import {
   SIGNUP_REQUEST,
   SIGNUP_SUCCESS,
   SIGNUP_ERROR,
-  LOGOUT
+  LOGOUT,
 } from '../actions/auth';
 
 const token = localStorage.getItem('token');
@@ -14,7 +14,7 @@ const user = token && jwtDecode(token).user;
 
 const initialState = {
   ...(token && { token }),
-  ...(user && { user })
+  ...(user && { user }),
 };
 
 export default (state = initialState, action) => {
@@ -29,7 +29,7 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         token: action.token,
-        user
+        user,
       };
 
     case SIGNUP_ERROR:
